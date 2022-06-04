@@ -1,0 +1,30 @@
+{
+  "name": "cookie_blog_backend",
+  "version": "0.0.1",
+  "description": "Um simples backend para um blog pessoal feito com Express",
+  "scripts": {
+    "start": "pm2 start ./src/server.js --watch --name blog --ignore-watch=\"node_modules\" --wait-ready --shutdown-with-message",
+    "stop": "pm2 stop blog",
+    "reload": "pm2 reload blog"
+  },
+  "author": "Cookie",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dompurify": "^2.3.8",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "jsdom": "^19.0.0",
+    "marked": "^4.0.16",
+    "mongoose": "^6.3.5",
+    "slugify": "^1.6.5",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
